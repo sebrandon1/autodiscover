@@ -1,6 +1,6 @@
 module github.com/test-network-function/autodiscover
 
-go 1.19
+go 1.20
 
 replace github.com/openshift/machine-config-operator => github.com/openshift/machine-config-operator v0.0.1-0.20200913004441-7eba765c69c9
 
