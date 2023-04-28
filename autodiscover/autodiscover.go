@@ -183,7 +183,6 @@ func getOpenshiftVersion(oClient clientconfigv1.ConfigV1Interface) (ver string, 
 		switch {
 		case kerrors.IsForbidden(err), kerrors.IsNotFound(err):
 			logrus.Infof("OpenShift Version not found (must be logged in to cluster as admin): %v", err)
-			err = nil
 		}
 	}
 	if clusterOperator != nil {
